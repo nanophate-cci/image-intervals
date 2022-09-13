@@ -4,6 +4,8 @@ orbs:
   
 jobs:
   build:
-    machine: true
-  step:
-    - aws-ecr/build-and-push-image
+    machine:
+      image: ubuntu-2004:202101-01
+    resource_class: arm.medium
+    steps:
+      - aws-ecr/build-and-push-image
