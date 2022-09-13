@@ -8,4 +8,7 @@ jobs:
       image: ubuntu-2004:202101-01
     resource_class: arm.medium
     steps:
-      - aws-ecr/build-and-push-image
+      - aws-ecr/build-and-push-image:
+          repo: nanophate-cci-intervals
+          registry-id: 365228465016
+          region: ap-northeast-1
