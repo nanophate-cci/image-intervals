@@ -10,5 +10,5 @@ jobs:
     steps:
       - aws-ecr/build-and-push-image:
           repo: nanophate-cci-intervals
-          registry-id: 365228465016
+          registry-id: "365228465016"
           region: ap-northeast-1
